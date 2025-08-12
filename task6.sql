@@ -1,9 +1,7 @@
 -- Task 6 - Subqueries and Nested Queries 
-
 USE Sales;
 
 -- Scalar Subquery - Find the product with the highest price
-
 SELECT ProductName, Price
 FROM Orders
 WHERE Price = (SELECT MAX(Price) FROM Orders);
